@@ -23,7 +23,7 @@ Storage (buckets)
 
 Cuenta con 2 buckets 
 
-1 bucket publico y un bucket privado, el bucket privado solo se podra acceder por politica de la subnet privada
+1 bucket publico accessible por cualquier subnet y un bucket privado, el bucket privado solo se podra acceder por politica de la subnet privada
 
 ----------------
 
