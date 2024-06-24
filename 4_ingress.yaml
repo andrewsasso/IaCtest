@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minimal-ingress
+  namespace: examen
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx-example
+  rules:
+  - http: test.istea.com
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: examen
+            port:
+              number: 80
